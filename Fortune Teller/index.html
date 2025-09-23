@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
+
+    <title>Fortune Teller</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <!-- this is the start of content -->
+    <h1>
+      Fortune Teller 
+    </h1>
+    
+    <img src="Genie.jpeg" alt="genie lamp" width="300" height="300">
+
+    
+
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="namefield">Name:</label><br>
+      <input type="text" id="namefield" name="name" placeholder="your name" required>
+      <br>
+      <label for="questionfield">Question:</label><br>
+      <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      <br>
+      <!--my contributions-->
+      <label for="colorfield"> Fav Color:</label><br>
+      <input type="checkbox" id="colorfield" name="color" value="red"> red
+      <input type="checkbox" id="colorfield" name="color" value="blue"> blue
+      <input type="checkbox" id="colorfield" name="color" value="green"> green
+      <br>
+
+      <label for="Age"> Age:</label><br>
+      <input type="radio" id="age1" name="age" value="0-12"> 0-12
+      <input type="radio" id="age2" name="age" value="13-19"> 13-19
+      <input type="radio" id="age3" name="age" value="20-39"> 20-39
+      <input type="radio" id="age4" name="age" value="40+"> 40+
+      <br>
+
+      <label for ="hobbyfield"> Hobbies Ranked:</label><br>
+      <textarea name="hobby" id="hobbyfield" cols="30" rows="10" placeholder="your hobby"></textarea>
+      <br>
+      
+        <option value="sports">Sports</option>
+        <option value="reading">Reading</option>
+        <option value="gaming">Gaming</option>
+        <option value="cooking">Cooking</option>
+        <option value="traveling">Traveling</option>
+        <option value="music">Music</option>
+        <option value="other">Other</option>
+    </select>
+        <input type="submit">
+
+    </form>
+   
+    <div id="fortune"></div>
+
+  
+  </body>
+</html>
