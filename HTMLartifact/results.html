@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+</head>
+<body>
+    <h1> Required Information to book at our unique hotel</h1>
+    <p> Please fill out the form below to book your stay at Straszny hotel!</p>
+    
+    <form action="ThankYoupage.html" method="get">
+        
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email Address:</form><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin" required><br>
+
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout" required><br>
+
+        <label for="roomtype">Room Type:</label><br>
+        <select id="roomtype" name="roomtype" required>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+            </select><br><br>
+        
+        <h2> Payment Information</h2>
+        
+        <label for="cardnumber">Credit Card Number:</label><br>
+        <input type="text" id="cardnumber" name="cardnumber" required><br>
+        <label for="expiry">Expiry Date:</label><br>
+        <input type="text" id="expiry" name="expiry" required><br>
+        <label for="cvv">CVV:</label><br>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+       
+        
+        <h2> Terms and Conditions</h2>
+        
+       <input type="radio" id="terms" name="terms" required>
+        <label for="terms"> I agree to the terms and conditions</label><br>
+        <input type="radio" id="Human Verification" name="Human Verification" required>
+        <label for="Human Verification"> I am not a robot</label><br>
+        <input type="radio" id="age" name="age" required>
+        <label for="age"> I am over 18 years of age</label><br>
+        <input type="radio" id="liability and suits" name="liability and suits" required>
+        <label for="liability and suits"> I understand that Da Best Hotel is not liable for any dissatisfaction or misinformation</label><br><br>
+       
+        
+
+        <h2> Leave a (good) review of our hotel!</h2>
+
+        <label for="review">Leave a review of our hotel:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50"
+        placeholder="Write your review here..." required minlength="50" maxlength="250"></textarea><br>
+        <input type="submit" value="Submit Review">
+        </form><br>
+
+
+         <h2><input type="submit" value="Book Now"><br><br></h2>
+        <!-- I used 3 forms for organizational and personal preferences, though they arent exactly required within form creation-->
+
+        <h3> Note: Any Bad reviews will be not be considered as genuine</h3>
+        <a href = "index.html"> Back to our informatical page</a><br><br>
+        <a href="https://www.booking.com/"> Link to another booking site</a><br><br>
+        <em><h6>Disclaimer: We at Straszny hotel are not liable to any suits regarding dissatisfaction, misinformation, or other major/minor suits</h6></em>
+
+         <style>
+        body {
+            background-color: rgb(154, 193, 241); }
+    
+    </style>
+        
+</body>
+</html>
+
